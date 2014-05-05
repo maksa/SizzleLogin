@@ -7,20 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2DD379C81917DF9100564690 /* spiderman.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DD379C71917DF9100564690 /* spiderman.png */; };
 		2DEE4B2D1917AC6300DBAF93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEE4B2C1917AC6300DBAF93 /* Foundation.framework */; };
 		2DEE4B2F1917AC6300DBAF93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEE4B2E1917AC6300DBAF93 /* CoreGraphics.framework */; };
 		2DEE4B311917AC6300DBAF93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEE4B301917AC6300DBAF93 /* UIKit.framework */; };
 		2DEE4B371917AC6300DBAF93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DEE4B351917AC6300DBAF93 /* InfoPlist.strings */; };
 		2DEE4B391917AC6300DBAF93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEE4B381917AC6300DBAF93 /* main.m */; };
 		2DEE4B3D1917AC6300DBAF93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEE4B3C1917AC6300DBAF93 /* AppDelegate.m */; };
-		2DEE4B401917AC6300DBAF93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DEE4B3E1917AC6300DBAF93 /* Main.storyboard */; };
-		2DEE4B431917AC6300DBAF93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEE4B421917AC6300DBAF93 /* ViewController.m */; };
+		2DEE4B401917AC6300DBAF93 /* SizzleLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DEE4B3E1917AC6300DBAF93 /* SizzleLogin.storyboard */; };
+		2DEE4B431917AC6300DBAF93 /* SizzleLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEE4B421917AC6300DBAF93 /* SizzleLoginViewController.m */; };
 		2DEE4B451917AC6300DBAF93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DEE4B441917AC6300DBAF93 /* Images.xcassets */; };
 		2DEE4B4C1917AC6400DBAF93 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEE4B4B1917AC6400DBAF93 /* XCTest.framework */; };
 		2DEE4B4D1917AC6400DBAF93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEE4B2C1917AC6300DBAF93 /* Foundation.framework */; };
 		2DEE4B4E1917AC6400DBAF93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEE4B301917AC6300DBAF93 /* UIKit.framework */; };
 		2DEE4B561917AC6400DBAF93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DEE4B541917AC6400DBAF93 /* InfoPlist.strings */; };
 		2DEE4B581917AC6400DBAF93 /* SizzleLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DEE4B571917AC6400DBAF93 /* SizzleLoginTests.m */; };
+		2DEE4B641917CCC700DBAF93 /* selfie.png in Resources */ = {isa = PBXBuildFile; fileRef = 2DEE4B631917CCC700DBAF93 /* selfie.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2DD379C71917DF9100564690 /* spiderman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spiderman.png; sourceTree = "<group>"; };
 		2DEE4B291917AC6300DBAF93 /* SizzleLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SizzleLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DEE4B2C1917AC6300DBAF93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2DEE4B2E1917AC6300DBAF93 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -44,15 +47,16 @@
 		2DEE4B3A1917AC6300DBAF93 /* SizzleLogin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SizzleLogin-Prefix.pch"; sourceTree = "<group>"; };
 		2DEE4B3B1917AC6300DBAF93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2DEE4B3C1917AC6300DBAF93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2DEE4B3F1917AC6300DBAF93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2DEE4B411917AC6300DBAF93 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2DEE4B421917AC6300DBAF93 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2DEE4B3F1917AC6300DBAF93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SizzleLogin.storyboard; sourceTree = "<group>"; };
+		2DEE4B411917AC6300DBAF93 /* SizzleLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SizzleLoginViewController.h; sourceTree = "<group>"; };
+		2DEE4B421917AC6300DBAF93 /* SizzleLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SizzleLoginViewController.m; sourceTree = "<group>"; };
 		2DEE4B441917AC6300DBAF93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2DEE4B4A1917AC6400DBAF93 /* SizzleLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SizzleLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DEE4B4B1917AC6400DBAF93 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2DEE4B531917AC6400DBAF93 /* SizzleLoginTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SizzleLoginTests-Info.plist"; sourceTree = "<group>"; };
 		2DEE4B551917AC6400DBAF93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2DEE4B571917AC6400DBAF93 /* SizzleLoginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SizzleLoginTests.m; sourceTree = "<group>"; };
+		2DEE4B631917CCC700DBAF93 /* selfie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selfie.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +116,13 @@
 		2DEE4B321917AC6300DBAF93 /* SizzleLogin */ = {
 			isa = PBXGroup;
 			children = (
+				2DD379C71917DF9100564690 /* spiderman.png */,
+				2DEE4B631917CCC700DBAF93 /* selfie.png */,
 				2DEE4B3B1917AC6300DBAF93 /* AppDelegate.h */,
 				2DEE4B3C1917AC6300DBAF93 /* AppDelegate.m */,
-				2DEE4B3E1917AC6300DBAF93 /* Main.storyboard */,
-				2DEE4B411917AC6300DBAF93 /* ViewController.h */,
-				2DEE4B421917AC6300DBAF93 /* ViewController.m */,
+				2DEE4B3E1917AC6300DBAF93 /* SizzleLogin.storyboard */,
+				2DEE4B411917AC6300DBAF93 /* SizzleLoginViewController.h */,
+				2DEE4B421917AC6300DBAF93 /* SizzleLoginViewController.m */,
 				2DEE4B441917AC6300DBAF93 /* Images.xcassets */,
 				2DEE4B331917AC6300DBAF93 /* Supporting Files */,
 			);
@@ -229,8 +235,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DEE4B451917AC6300DBAF93 /* Images.xcassets in Resources */,
+				2DEE4B641917CCC700DBAF93 /* selfie.png in Resources */,
 				2DEE4B371917AC6300DBAF93 /* InfoPlist.strings in Resources */,
-				2DEE4B401917AC6300DBAF93 /* Main.storyboard in Resources */,
+				2DD379C81917DF9100564690 /* spiderman.png in Resources */,
+				2DEE4B401917AC6300DBAF93 /* SizzleLogin.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DEE4B431917AC6300DBAF93 /* ViewController.m in Sources */,
+				2DEE4B431917AC6300DBAF93 /* SizzleLoginViewController.m in Sources */,
 				2DEE4B3D1917AC6300DBAF93 /* AppDelegate.m in Sources */,
 				2DEE4B391917AC6300DBAF93 /* main.m in Sources */,
 			);
@@ -282,12 +290,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		2DEE4B3E1917AC6300DBAF93 /* Main.storyboard */ = {
+		2DEE4B3E1917AC6300DBAF93 /* SizzleLogin.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2DEE4B3F1917AC6300DBAF93 /* Base */,
 			);
-			name = Main.storyboard;
+			name = SizzleLogin.storyboard;
 			sourceTree = "<group>";
 		};
 		2DEE4B541917AC6400DBAF93 /* InfoPlist.strings */ = {
@@ -456,6 +464,7 @@
 				2DEE4B5D1917AC6400DBAF93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2DEE4B5E1917AC6400DBAF93 /* Build configuration list for PBXNativeTarget "SizzleLoginTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +473,7 @@
 				2DEE4B601917AC6400DBAF93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
