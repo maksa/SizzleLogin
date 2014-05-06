@@ -7,7 +7,7 @@
 //
 
 #import "SizzleLoginViewController.h"
-#define DURATION 3 .0
+#define DURATION 3.0
 #define TIMING_FUNCTION kCAMediaTimingFunctionDefault
 
 @interface SizzleLoginViewController ()
@@ -30,15 +30,16 @@
 
 -(void)createChartLayer {
 	self.shapeLayer = [ CAShapeLayer layer];
-	self.shapeLayer.strokeColor = [ UIColor purpleColor ].CGColor;
+	self.shapeLayer.strokeColor = [ UIColor cyanColor ].CGColor;
 	self.shapeLayer.fillColor = [ UIColor clearColor ].CGColor;
 	self.shapeLayer.lineWidth = 4.0;
-	CGMutablePathRef path = CGPathCreateMutable();
-	CGPathMoveToPoint(path, NULL, 0, 0);
+//	CGMutablePathRef path = CGPathCreateMutable();
+//	CGPathMoveToPoint(path, NULL, 0, 0);
 	
 	self.shapeLayer.zPosition = -1;
 	
-	//	self.shapeLayer.path = [ self makeNewPath ];
+	//self.shapeLayer.path = [ self makeNewPath ];
+//	self.shapeLayer.path = path;
 	
 	[self.view.layer addSublayer:self.shapeLayer];
 
@@ -114,11 +115,32 @@
 	}];
 }
 
+-(void)fadeOutChart {
+	CABasicAnimation* fadeout = [ CABasicAnimation animationWithKeyPath:@"opacity"];
+	fadeout.duration = 1.0;
+	fadeout.autoreverses = NO;
+	fadeout.repeatCount = 0;
+	fadeout.removedOnCompletion = NO;
+	fadeout.fillMode = kCAFillModeForwards;
+	fadeout.timingFunction = [CAMediaTimingFunction functionWithName:TIMING_FUNCTION];
+	fadeout.fromValue = @(1.0);
+	fadeout.toValue = @(0.0);
+	[self.shapeLayer addAnimation:fadeout forKey:@"fadeout"];
+}
+
 -(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
 	CABasicAnimation* a = (CABasicAnimation*)anim;
 	if( a == [self.imageLayer animationForKey:@"pan"]) {
 		self.imageLayer.position = [a.toValue CGPointValue];
 	}
+	
+	UIInterpolatingMotionEffect *horizontalMotionEffect = [[UIInterpolatingMotionEffect alloc] initWithKeyPath:@"center.x" type:UIInterpolatingMotionEffectTypeTiltAlongHorizontalAxis];
+	
+	horizontalMotionEffect.minimumRelativeValue = @(-100);
+	
+	horizontalMotionEffect.maximumRelativeValue = @(100);
+	[self fadeOutChart ];
+	[self.view addMotionEffect:horizontalMotionEffect];
 	
 }
 
