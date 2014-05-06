@@ -12,5 +12,7 @@
 @property (weak, nonatomic) IBOutlet UIView *loginControls;
 @property (nonatomic, strong) CALayer* imageLayer;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *centerX;
+@property (weak, nonatomic) IBOutlet UIView *otherView;
 @property (nonatomic, strong) CAShapeLayer* shapeLayer;
+@property (weak, nonatomic) IBOutlet UIView *sizzleView;
 @end

@@ -21,11 +21,11 @@
 	self.imageLayer = [CALayer layer];
 	CGFloat nativeWidth = CGImageGetWidth(backgroundImage.CGImage);
 	CGFloat nativeHeight = CGImageGetHeight(backgroundImage.CGImage);
-	CGRect  startFrame = CGRectMake(-500, -300, nativeWidth, nativeHeight);
+	CGRect  startFrame = CGRectMake(-500, -200, nativeWidth, nativeHeight);
 	self.imageLayer.contents = (id)backgroundImage.CGImage;
 	self.imageLayer.frame = startFrame;
 	self.imageLayer.zPosition = -1;
-	[self.view.layer addSublayer:self.imageLayer ];
+	[self.sizzleView.layer addSublayer:self.imageLayer ];
 }
 
 -(void)createChartLayer {
@@ -41,7 +41,7 @@
 	//self.shapeLayer.path = [ self makeNewPath ];
 //	self.shapeLayer.path = path;
 	
-	[self.view.layer addSublayer:self.shapeLayer];
+	[self.sizzleView.layer addSublayer:self.shapeLayer];
 
 }
 
@@ -73,7 +73,7 @@
 	move.fillMode = kCAFillModeForwards;
 	move.timingFunction = [CAMediaTimingFunction functionWithName:TIMING_FUNCTION];
 	move.delegate = self;
-	CGPoint newPosition = CGPointMake(self.imageLayer.position.x - 300, self.imageLayer.position.y + 200 );
+	CGPoint newPosition = CGPointMake(self.imageLayer.position.x - 200, self.imageLayer.position.y + 200 );
 	
 	move.toValue = [ NSValue valueWithCGPoint:newPosition];
 
@@ -98,7 +98,7 @@
 	moveLine.removedOnCompletion = NO;
 	moveLine.timingFunction = [CAMediaTimingFunction functionWithName:TIMING_FUNCTION];
 	moveLine.fillMode = kCAFillModeForwards;
-	newPosition = CGPointMake(self.shapeLayer.position.x - 300, self.shapeLayer.position.y + 200 );
+	newPosition = CGPointMake(self.shapeLayer.position.x - 200, self.shapeLayer.position.y + 200 );
 	moveLine.toValue = [ NSValue valueWithCGPoint:newPosition];
 	
 	[self.shapeLayer addAnimation:moveLine forKey:@"moveline"];
@@ -140,7 +140,7 @@
 	
 	horizontalMotionEffect.maximumRelativeValue = @(100);
 	[self fadeOutChart ];
-	[self.view addMotionEffect:horizontalMotionEffect];
+	[self.sizzleView addMotionEffect:horizontalMotionEffect];
 	
 }
 

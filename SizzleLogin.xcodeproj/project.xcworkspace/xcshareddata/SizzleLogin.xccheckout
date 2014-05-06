@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9C02A065-909A-49B5-98CE-F166D28E58B1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SizzleLogin</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6F372409-C841-4C27-B74B-BED959D9F17B</key>
+		<string>https://github.com/maksa/SizzleLogin.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SizzleLogin.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6F372409-C841-4C27-B74B-BED959D9F17B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/maksa/SizzleLogin.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6F372409-C841-4C27-B74B-BED959D9F17B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6F372409-C841-4C27-B74B-BED959D9F17B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SizzleLogin</string>
+		</dict>
+	</array>
+</dict>
+</plist>
